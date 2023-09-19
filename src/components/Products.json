@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "name": "Taza blanca de One Piece",
+            "price": 90,
+            "description": "Taza blanca de cerámica con el logo de la bandera de la serie One Piece",
+            "type": "Taza"
+        },
+        {
+            "name": "Taza blanca de Hatsune Miku",
+            "price": 90,
+            "description": "Taza blanca de cerámica con el personaje Hatsune Miko",
+            "type": "Taza"
+        },
+        {
+            "name": "Taza blanca de Programador",
+            "price": 90,
+            "description": "Taza blanca de cerámica con la frase Hello World",
+            "type": "Taza"
+        },
+        {
+            "name": "Taza blanca de Ingeniero",
+            "price": 90,
+            "description": "Taza blanca de cerámica para ingenieros",
+            "type": "Taza"
+        },
+        {
+            "name": "Taza blanca de Diseñador",
+            "price": 90,
+            "description": "Taza blanca de cerámica para diseñadores",
+            "type": "Taza"
+        },
+        {
+            "name": "Taza blanca de arquitectos",
+            "price": 90,
+            "description": "Taza blanca de cerámica para arquitectos",
+            "type": "Taza"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+.carousel-shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    menu {
+        margin: 0;
+        padding: 0 0.5rem;
+        align-self: center;
+    }
+
+    img {
+        animation: 10s ease-in infinite reverse both running carouselAnimation;
+        position: absolute;
+        transition: $ease-in;
+        width: 150% !important;
+        scale: 1;
+        
+    }
+
+    h3 {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        margin: 5px 30px;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.21);
+
+    }
+
+    .arrows {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        color: hsl(0, 0%, 69%);
+        > * {
+            cursor: pointer;
+            &:hover{
+                color: hsl(0, 0%, 95%);
+            }
+        }
+
+    }
+    
+    .bars {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 1.5rem;
+        width: 50%;
+        height: 0.5rem;
+        > * {
+            width: 100%;
+            border-radius: 5px;
+            height: 5px;
+            background-color: #ffffff70;
+            .active{
+                
+                background-color: #ffffffd7;
+                height: 7.5px;
+            }
+
+            &:hover{
+                background-color: #ffffffd7;
+            }
+        }
+        bottom: 5px;
+        z-index: 2;
+    }
+
+
+}
