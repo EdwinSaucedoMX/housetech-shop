@@ -6,7 +6,7 @@ export function ShopContainer() {
     return (
         
             <section className="shop-container ">
-                <Model />
+                {/* <Model /> */}
                 {
                     data.products.map((item) => {
                         return(
