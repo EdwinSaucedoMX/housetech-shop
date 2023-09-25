@@ -12,10 +12,15 @@ import {
     Button
 } from "@chakra-ui/react";
 
-export function ShopItem({name, description, price}) {
+
+
+export function ShopItem({ name, description, price }) {
+
     return (
         <Card className="product-card" maxW='250px' maxH='320px' borderRadius='lg'>
+            
             <CardBody>
+                
                 <Image
                     src='https://img.freepik.com/fotos-premium/taza-cafe-blanca-11-onzas-trazado-recorte_686086-14.jpg'
                     alt='Green double couch with wooden legs'
@@ -26,7 +31,7 @@ export function ShopItem({name, description, price}) {
                     <Text className="description">
                         {description || "This sofa is perfect for modern tropical spaces."}
                     </Text>
-                    <Text className="price"  fontSize='2xl'>
+                    <Text className="price" fontSize='2xl'>
                         ${price || 450}
                     </Text>
                 </Stack>

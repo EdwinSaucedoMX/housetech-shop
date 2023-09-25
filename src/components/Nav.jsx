@@ -15,11 +15,12 @@ export function Nav() {
     return (
 
         <Grid as={"nav"} gridTemplateColumns={"repeat(2,1fr)"} direction={"row"}>
-            <Grid gridTemplateColumns={"repeat(auto-fit,minmax(100px, 1fr))"}>
-                <NavLink name={"Inicio"} link={"https://housetechmx.com"} />
-                <NavLink name={"Shop"} link={"/"} />
-            </Grid>
-            <Stack direction={['column', 'row-reverse']} margin={"0 -30px"}>
+            <Stack direction={['column', 'row']} gap={"30px"}>
+                <NavLink name={"Inicio"} link={"/"} />
+                <NavLink name={"Shop"} link={"https://shop.housetechmx.com"} />
+                
+            </Stack>
+            <Stack direction={['column', 'row-reverse']} >
                 {!darkMode && <Icon as={FaSun} className="icon" width={"70px"} height={"100%"} onClick={handleDarkMode}/>}
                 {darkMode && <Icon as={FaMoon} className="icon" width={"70px"} height={"100%"} onClick={handleDarkMode} />}
             </Stack>
